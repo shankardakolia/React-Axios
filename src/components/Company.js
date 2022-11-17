@@ -43,12 +43,12 @@ const Company = () => {
             key={row.company_id}
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
           >
-            <TableCell align="right">{row.incubator_id}</TableCell>
-            <TableCell align="right">{row.name}</TableCell>
-            <TableCell align="right">{row.website}</TableCell>
-            <TableCell align="right">{row.sector}</TableCell>
-            <TableCell align="right">{row.email}</TableCell>
-            <TableCell align="right">{row.contact_number1}</TableCell>
+            <TableCell align="right">{row.company_id}</TableCell>
+            <TableCell align="right">{row.name? row.name : 'Empty'}</TableCell>
+            <TableCell align="right">{row.website? row.website : 'Empty'}</TableCell>
+            <TableCell align="right">{row.sector? row.sector : 'Empty'}</TableCell>
+            <TableCell align="right">{row.email? row.email : 'Empty'}</TableCell>
+            <TableCell align="right">{row.contact_number1? row.contact_number1 : 'Empty'}</TableCell>
           </TableRow>
         ))}
       </TableBody>
